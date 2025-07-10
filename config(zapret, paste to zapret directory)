@@ -95,7 +95,6 @@ MODE_FILTER=none
 
 # donttouch,none,software,hardware
 FLOWOFFLOAD=none
-
 # openwrt: specify networks to be treated as LAN. default is "lan"
 #OPENWRT_LAN="lan lan2 lan3"
 # openwrt: specify networks to be treated as WAN. default wans are interfaces with default route
