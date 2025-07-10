@@ -1,0 +1,6 @@
+[2025-06-26 15:06:37.164] [info] Using configuration file /home/paderinee/.config/waybar/config.jsonc
+[2025-06-26 15:06:37.166] [info] Using CSS file /home/paderinee/.config/waybar/style.css
+[2025-06-26 15:06:37.169] [info] Hyprland IPC starting
+[2025-06-26 15:06:37.170] [info] Loading persistent workspaces from Waybar config
+[2025-06-26 15:06:37.170] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-06-26 15:06:37.844] [info] Bar configured (width: 1516, height: 30) for output: eDP-1
