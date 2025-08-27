@@ -12,6 +12,7 @@ return {
 			require("neo-tree").setup({
 				window = {
 					width = 25,
+					close_if_last_window = true,
 					mappings = {
 						-- ["<2-LeftMouse>"] = "open_tabnew",
 						["<2-LeftMouse>"] = "open",

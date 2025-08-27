@@ -34,5 +34,6 @@ require("lazy").setup({
 	{"hrsh7th/nvim-cmp"},
 	require("plugins.mason"),
 	require("plugins.telescope"),
-	require("plugins.conform")
+	require("plugins.conform"),
+	require("plugins.bufdelete")
 })

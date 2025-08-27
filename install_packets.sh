@@ -28,7 +28,7 @@ sudo pacman -S --noconfirm hyprlock hyprshot
 sudo pacman -S --noconfirm xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xdg-utils
 
 # applications
-sudo pacman -S --noconfirm firefox chromium btop steam gnome-calculator obs-studio mpv nvim viewnior thunar
+sudo pacman -S --noconfirm firefox chromium btop steam gnome-calculator obs-studio mpv nvim viewnior thunar swaync
 
 # decorative
 sudo pacman -S --noconfirm cava fastfetch swww imagemagick
