@@ -1,0 +1,2 @@
+#!/bin/bash
+~/VSCode-linux-x64/code --enable-features=UseOzonePlatform --ozone-platform=wayland

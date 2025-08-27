@@ -23,7 +23,7 @@
    "modules-right": [
 		"group/system_info",
 		"custom/separator",
-		"hyprland/language",
+		"custom/language",
 		"custom/separator",
     	"group/power_menu"
 	],
@@ -33,7 +33,7 @@
 		"modules": [
 			"memory",
 			"cpu",
-			"battery",
+			//"battery",
 			"pulseaudio"
 		]
 	},
@@ -42,6 +42,7 @@
 		"orientation": "horizontal",
 		"modules": [
 			"network",
+			"custom/notifications",
 			"custom/off_button"
 		]
 	},
@@ -157,6 +158,12 @@
       "on-click": "pavucontrol"
    },
 
+	"custom/language": {
+		"format": "{}",
+		"exec": "~/.config/hypr/scripts/get_lang.sh",
+		"interval": 1,
+		"tooltip": false
+	},
 
 	"hyprland/language": {
 		"format": "{short} {variant}",
@@ -177,12 +184,21 @@
 		"format": "⏻ ",
 		"interval": "once",
 		"tooltip": false,
-		"on-click": "wlogout"
+		"on-click": "~/.config/rofi/powermenu/type-5/powermenu.sh"
 	},
 
 	"custom/separator": {
 		"format": " ",
   	   "interval": "once",
       "tooltip": false
+	},
+
+	"custom/notifications": {
+		"exec": "/home/paderinee/.config/hypr/scripts/get_swaync_icon.sh",
+		"interval": 1,
+		"on-click": "swaync-client -t",
+		"on-click-right": "swaync-client -d -sw",
+		"format": "{}  ",
+		"tooltip": false
 	}
 }

@@ -1,0 +1,125 @@
+@import "colors.rasi"
+
+configuration {
+    modi:                        "drun";
+    show-icons:                  true;
+    drun-display-format:         "{name}";
+    font:                        "JetBrainsMono NF Bold 11";
+}
+
+//----- Main Window -----//
+
+window {
+    enabled:                     true;
+    fullscreen:                  false;
+    width:                       100%;
+    transparency:                "real";
+    cursor:                      "default";
+    spacing:                     0px;
+    padding:                     0px;
+    border:                      0px;
+    border-radius:               0px;
+    border-color:                transparent;
+    background-color:            transparent;
+}
+
+//----- Main Box -----//
+
+mainbox {
+    enabled:                     true;
+    children:                    [ "inputbar","listview" ];
+	 background-color:            @main-bg;
+}
+
+//----- Input ----- //
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     5px;
+    background-color:            transparent;
+    text-color:                  @main-fg;
+    orientation:                 horizontal;
+    children:                    [ "textbox-prompt-colon", "entry" ];
+}
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         " ";
+    padding:                     12px 15px;
+    border-radius:               100%;
+    background-color:            @search-field;
+    text-color:                  @main-fg;
+}
+entry {
+    enabled:                     true;
+    expand:                      false;
+    width:                       1475px;
+    padding:                     12px 16px;
+    border-radius:               100%;
+    background-color:            @search-field;
+    text-color:                  @main-fg;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
+}
+
+//----- Listview -----//
+
+listview {
+    enabled:                     true;
+    columns:                     5;
+    lines:                       1;
+    spacing:                     34px;
+    padding:                     20px 30px;
+    cycle:                       true;
+    dynamic:                     false;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  @main-fg;
+}
+
+//----- Elements -----//
+
+element {
+    enabled:                     true;
+    orientation:                 vertical;
+    spacing:                     0px;
+    padding:                     10px;
+    border-radius:               20px;
+    cursor:                      default;
+    background-color:            transparent;
+    text-color:                  @main-fg;
+}
+
+@media(max-aspect-ratio: 1.8) {
+    element {
+        orientation:             vertical;
+    }
+}
+
+element selected.normal {
+    background-color:            @select-bg;
+    text-color:                  @select-fg;
+}
+
+element-icon {
+    size:                        30%;
+    cursor:                      pointer;
+    border-radius:               15px;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    padding:                     0px;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}

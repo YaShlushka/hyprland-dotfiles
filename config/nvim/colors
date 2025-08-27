@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/paderinee/Pictures/wallpapers/sousou-no-frieren.png"
+let background = "#302d22"
+let foreground = "#d1dde9"
+let cursor     = "#d1dde9"
+
+" Colors
+let color0  = "#302d22"
+let color1  = "#D3AA6C"
+let color2  = "#DEC567"
+let color3  = "#386297"
+let color4  = "#6F8AA0"
+let color5  = "#BCADA4"
+let color6  = "#E9CFA4"
+let color7  = "#d1dde9"
+let color8  = "#929aa3"
+let color9  = "#D3AA6C"
+let color10 = "#DEC567"
+let color11 = "#386297"
+let color12 = "#6F8AA0"
+let color13 = "#BCADA4"
+let color14 = "#E9CFA4"
+let color15 = "#d1dde9"

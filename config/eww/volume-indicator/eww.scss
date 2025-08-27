@@ -1,6 +1,3 @@
-$white: #c6c6c6;
-$gray: gray;
-$gray-alt: #333333;
 @import "../../waybar/color_scheme.scss"
 
 *{
@@ -22,6 +19,6 @@ $gray-alt: #333333;
 .cc-volbar trough highlight {
   min-height: 13px;
   border-radius: 100px;
-  background-color: $main-fg;
-  border: 1px solid #FFF;
+  background-color: $color1;
+  // border: 1px solid #FFF;
 }
