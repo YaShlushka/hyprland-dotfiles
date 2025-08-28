@@ -1,6 +1,6 @@
 ## nvidia settings
 create `/etc/modprobe.d/nvidia.conf` and add this line 
-:w
+
 ```
 options nvidia_drm modeset=1
 ```
@@ -16,3 +16,9 @@ rebuild grub `sudo grub-mkconfig -o /boot/grub/grub.cfg`
 
 ## firefox
 in `about:config` set toolkit.`legacyUserProfileCustomizations.stylesheets` to true
+
+## not sleep, when laptop closed
+at `/etc/systemd/logind.conf` set `HandleLidSwitch` to `ignore`
+
+## install oh my zsh
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
