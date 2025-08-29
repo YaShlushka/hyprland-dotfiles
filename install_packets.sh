@@ -20,7 +20,7 @@ sudo pacman -S --noconfirm zsh
 npm install --global pure-prompt
 
 # fonts
-sudo pacman -S --noconfirm ttf-jetbrains-mono-nerd ttf-jetbrains-mono # ttf-liberation noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome otf-font-awesome
+sudo pacman -S --noconfirm ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-liberation noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome otf-font-awesome
 
 # hypr
 sudo pacman -S --noconfirm hyprlock hyprshot
