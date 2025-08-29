@@ -15,7 +15,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nvidia_drm.modeset=1"
 rebuild grub `sudo grub-mkconfig -o /boot/grub/grub.cfg`
 
 ## firefox
-in `about:config` set toolkit.`legacyUserProfileCustomizations.stylesheets` to true
+in `about:config` set `toolkit.legacyUserProfileCustomizations.stylesheets` to true
 
 ## not sleep, when laptop closed
 at `/etc/systemd/logind.conf` set `HandleLidSwitch` to `ignore`
