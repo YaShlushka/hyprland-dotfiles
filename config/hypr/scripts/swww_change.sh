@@ -18,22 +18,25 @@ if [ -n "$SELECTED_WALLPAPER" ]; then
     sed -i "${WALLPAPER_LINE}s|.*|$NEW_PATH|" "$HYPRLOCK_CONF"
 
 	 # применяем тему к приложениям через pywal
-	 wal -i $WALLPAPER_DIR/$SELECTED_WALLPAPER
+	 # wal -i $WALLPAPER_DIR/$SELECTED_WALLPAPER
+	 wal -n --cols16 -i $WALLPAPER_DIR/$SELECTED_WALLPAPER
 	 ~/.config/hypr/scripts/update_colors_css.sh
 	 ~/.config/hypr/scripts/update_colors_scss.sh
 	 ~/.config/hypr/scripts/make_rasi_colors.sh
-	  ~/.config/hypr/scripts/make_conf_colors.sh
+	 ~/.config/hypr/scripts/make_conf_colors.sh
 	 killall waybar && waybar &
 
 	 sed -i "69c\    background-image:            url(\""$WALLPAPER_DIR"/"$SELECTED_WALLPAPER"\", width);" ~/.config/rofi/powermenu/type-5/style-1.rasi
-	 sed -i "76c\    background-image:            url(\""$WALLPAPER_DIR"/"$SELECTED_WALLPAPER"\", width);" ~/.config/rofi/launchers/type-7/style-1.rasi
+	 sed -i "70c\    background-image:            url(\""$WALLPAPER_DIR"/"$SELECTED_WALLPAPER"\", width);" ~/.config/rofi/launchers/type-7/style-1.rasi
 	 sed -i "68c\    background-image:            url(\""$WALLPAPER_DIR"/"$SELECTED_WALLPAPER"\", width);" ~/.config/rofi/applets/type-4/style-1.rasi
 
 	 cp ~/.cache/wal/colors-wal.vim ~/.config/nvim/colors
 	 cp ~/.cache/wal/discord-pywal.css ~/.config/BetterDiscord/themes/my-theme.theme.css
+	 cp ~/.cache/wal/discord-pywal1.css ~/.config/BetterDiscord/themes/my-theme1.theme.css
 	 pywal-discord -t default
 
 	 killall eww
+	 killall volume.sh
 	 ~/.config/eww/volume-indicator/scripts/volume.sh &
 	 ~/.config/hypr/scripts/update_cava_colors.sh
 fi

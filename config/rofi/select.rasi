@@ -7,6 +7,10 @@ configuration {
     font:                        "JetBrainsMono NF Bold 11";
 }
 
+* {
+	font: "JetBrains Mono Nerd Font 12";
+}
+
 //----- Main Window -----//
 
 window {

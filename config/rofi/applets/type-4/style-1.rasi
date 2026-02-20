@@ -65,7 +65,7 @@ inputbar {
     border-radius:               10px;
     border-color:                @border-color;
     background-color:            transparent;
-    background-image:            url("/home/paderinee/Pictures/wallpapers/sousou-no-frieren.png", width);
+    background-image:            url("/home/paderinee/Pictures/wallpapers/w34.png", width);
     text-color:                  @main-fg;
     children:                    [ "textbox-prompt-colon", "prompt"];
 }

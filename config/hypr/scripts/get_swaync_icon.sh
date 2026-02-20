@@ -1,14 +1,12 @@
 #!/bin/bash
 
-# Проверяем, включен ли беззвучный режим
 if [ "$(swaync-client -D)" = "true" ]; then
-    echo ""  # Иконка для беззвучного режима
+	echo ""
 else
-    # Проверяем, есть ли непрочитанные уведомления
-    count=$(swaync-client -c)
-    if [ "$count" -gt 0 ]; then
-        echo ""  # Иконка + кол-во уведомлений
-    else
-        echo ""  # Иконка по умолчанию (можно заменить на другую)
-    fi
+	count=$(swaync-client -c)
+	if [ "$count" -gt 0 ]; then
+		echo ""
+	else
+		echo ""
+	fi
 fi

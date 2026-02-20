@@ -9,16 +9,16 @@ get_current_layout() {
 
 # Основная функция
 main() {
-    current_layout=$(get_current_layout)
+	current_layout=$(get_current_layout)
     
-    # Проверяем, что мы получили значение
-    if [ -z "$current_layout" ]; then
-        echo "Не удалось определить раскладку клавиатуры" >&2
-        exit 1
-    fi
+	# Проверяем, что мы получили значение
+	if [ -z "$current_layout" ]; then
+		echo "Не удалось определить раскладку клавиатуры" >&2
+		exit 1
+	fi
     
-    # Выводим результат в нижнем регистре
-    echo "$current_layout" | tr '[:upper:]' '[:lower:]'
+	# Выводим результат в нижнем регистре
+	echo "$current_layout" | tr '[:upper:]' '[:lower:]'
 }
 
 main "$@"

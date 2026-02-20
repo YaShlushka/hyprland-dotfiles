@@ -14,12 +14,13 @@ return {
 					width = 25,
 					close_if_last_window = true,
 					mappings = {
-						-- ["<2-LeftMouse>"] = "open_tabnew",
 						["<2-LeftMouse>"] = "open",
 						["<C-n>"] = "add",
 						["<Del>"] = "delete",
+						["<F2>"] = "rename",
 						["a"] = "none",
-						["d"] = "none"
+						["d"] = "none",
+						["r"] = "none"
 					},
 				},
 				filesystem = {

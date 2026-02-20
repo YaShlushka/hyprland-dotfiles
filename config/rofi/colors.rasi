@@ -1,12 +1,12 @@
 * {
-    main-bg:    			#302d22e6;
-    main-fg:    			#d1dde9ff;
-    main-br:            #D3AA6Cff;
-    select-urgent-bg:   #386297ff;
-    select-bg:          #D3AA6Cff;
-    select-fg:          #302d22e6;
+    main-bg:    			#111e21e6;
+    main-fg:    			#c3c6c7ff;
+    main-br:            #757348ff;
+    select-urgent-bg:   #497b71ff;
+    select-bg:          #757348ff;
+    select-fg:          #111e21e6;
     separatorcolor:     transparent;
     border-color:       transparent;
-	 search-field:			#d1dde90f;
-	 urgent:					#D3AA6Cff;
+	 search-field:			#c3c6c70f;
+	 urgent:					#757348ff;
 }

@@ -5,15 +5,16 @@
    "margin-left": 10,
    "margin-right": 10,
 	"height" : 30,
+	"spacing": 10,
 
 	"modules-left": [
 		"tray",
-	   "custom/separator",	
+	   // "custom/separator",	
 		"hyprland/workspaces",
-		"custom/separator",
+		// "custom/separator",
 		"wlr/taskbar",
-		"custom/separator",
-		"cava"
+		// "custom/separator",
+		"custom/cava"
 	],
 
    "modules-center": [
@@ -22,9 +23,9 @@
 
    "modules-right": [
 		"group/system_info",
-		"custom/separator",
-		"custom/language",
-		"custom/separator",
+		// "custom/separator",
+		"hyprland/language",
+		// "custom/separator",
     	"group/power_menu"
 	],
 
@@ -128,24 +129,11 @@
       "tooltip": false
    },
 
-	"battery": {
-      "states": {
-         "warning": 30,
-         "critical": 15
-      },
-      "format": "{icon} {capacity}% ",
-      "format-full": "{icon} {capacity}% ",
-      "format-charging": " {capacity}% ",
-      "format-plugged": " {capacity}% ",
-      "format-alt": "{time} {icon} ",
-      "format-icons": ["", "", "", "", ""]
-   },
-
 	"pulseaudio": {
       "format": "{icon} {volume}%",
-      "format-bluetooth": "{volume}% {icon} {format_source}",
-      "format-bluetooth-muted": " {icon} {format_source}",
-      "format-muted": "",
+      "format-bluetooth": "{icon} {volume}%  {format_source}",
+      "format-bluetooth-muted": "{icon}   {format_source}",
+      "format-muted": " ",
       "format-icons": {
          "headphone": "",
          "hands-free": "",
@@ -167,10 +155,10 @@
 
 	"hyprland/language": {
 		"format": "{short} {variant}",
-      "rotate": 0,
-      "min-length": 2,
-      "tooltip": false
-   },
+		"rotate": 0,
+		"min-length": 2,
+		"tooltip": false
+	},
 
    "network": {
       "format-wifi": "  {signalStrength}% ",
@@ -200,5 +188,9 @@
 		"on-click-right": "swaync-client -d -sw",
 		"format": "{}  ",
 		"tooltip": false
+	},
+	"custom/cava": {
+		"exec": "$HOME/.config/hypr/scripts/cava.sh",
+		"format": "{}"
 	}
 }

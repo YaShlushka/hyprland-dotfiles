@@ -3,9 +3,6 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 -- Sntup language servers.
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {}
-lspconfig.cssls.setup {
-    capabilities = capabilities
-}
 lspconfig.rust_analyzer.setup {
   settings = {
     ['rust-analyzer'] = {
@@ -18,7 +15,7 @@ lspconfig.rust_analyzer.setup {
     },
   },
 }
-lspconfig.clangd.setup {          -- ← добавлено для C/C++
+lspconfig.clangd.setup {
     capabilities = capabilities
 }
 lspconfig.lua_ls.setup {

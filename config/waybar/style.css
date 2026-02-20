@@ -20,6 +20,13 @@ window#waybar {
 	border-radius: 15px 15px 15px 15px;
 }
 
+/* #tray > .active { */
+/* 	background-color: @main-bg; */
+/* 	padding-left: 10px; */
+/* 	padding-right: 10px; */
+/* 	border-radius: 15px 15px 15px 15px; */
+/* } */
+
 #workspaces {
 	background-color: @main-bg;
 	padding-left: 10px;
@@ -101,7 +108,23 @@ window#waybar {
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+#taskbar.empty {
+	margin-left: -20px;
+	margin-right: 0;
+	padding: 0;
+	min-width: 0;
+	background: transparent;
+}
+
 #cava {
+   background-color: @main-bg;
+	color: @main-fg;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#custom-cava {
    background-color: @main-bg;
 	color: @main-fg;
 	padding-left: 10px;
@@ -125,7 +148,7 @@ window#waybar {
 	color: @main-fg;
 }
 
-#custom-language {
+#language {
 	background-color: @main-bg;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -153,7 +176,7 @@ window#waybar {
 
 #network {
 	background-color: transparent;
-	color: @yellow;
+	color: @blue;
 }
 
 /* #pulseaudio { */

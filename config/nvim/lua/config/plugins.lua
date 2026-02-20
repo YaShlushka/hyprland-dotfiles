@@ -35,5 +35,6 @@ require("lazy").setup({
 	require("plugins.mason"),
 	require("plugins.telescope"),
 	require("plugins.conform"),
-	require("plugins.bufdelete")
+	require("plugins.bufdelete"),
+	require("plugins.nvim-scrollview")
 })

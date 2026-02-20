@@ -11,7 +11,7 @@ theme="$type/$style"
 
 # Theme Elements
 prompt='Quick Links'
-mesg="Using Firefox as web browser"
+mesg="Using firefox as web browser"
 
 if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'
@@ -30,7 +30,7 @@ fi
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
-	option_1=" Perplexity"
+	option_1=" ChatGpt"
 	option_2=" Yandex"
 	option_3=" Youtube"
 	option_4=" Reddit"
@@ -65,7 +65,7 @@ run_rofi() {
 # Execute Command
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
-		xdg-open 'https://www.perplexity.ai/'
+		xdg-open 'https://chatgpt.com/'
 	elif [[ "$1" == '--opt2' ]]; then
 		xdg-open 'https://practicum.yandex.ru/'
 	elif [[ "$1" == '--opt3' ]]; then
