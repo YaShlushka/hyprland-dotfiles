@@ -1,0 +1,151 @@
+{
+   // основные настройки редактора
+   "window.openFilesInNewWindow": "off",     // открывать файлы в новом окне
+   "editor.insertSpaces": false,             // при нажатии tab ставит пробелы
+   "editor.smoothScrolling": true,           // плавная прокрутка
+   "editor.detectIndentation": true,         // автоопределение числа пробелом в файле
+   "editor.suggestSelection": "first",       // подсказки
+   "editor.multiCursorModifier": "alt",      // несколько курсоров
+   "editor.scrollBeyondLastLine": true,      // прокрутка ниже последней строки кода
+   "editor.renderControlCharacters": false,  // выделение невидимых символов
+   "editor.unicodeHighlight.ambiguousCharacters": false, // выделение неоднозначных символов
+   "editor.quickSuggestionsDelay": 10,  // время до появления подсказок
+   "files.autoSave": "onFocusChange",   // автосохранение при изменении фокуса
+   "editor.tabSize": 3,                 // размер табуляции по умолчанию
+
+   //внешний вид
+   "workbench.colorTheme": "Catppuccin Mocha",         // цветовая тема
+   "workbench.iconTheme": "symbols",            // иконоки файлов и папок
+   "workbench.productIconTheme": "Default",     // иконки самого vsc(проводник, расширения, git и т.д.)
+   "editor.glyphMargin": false,                 // полоса дебага ========================================
+   "editor.folding": false,                     // возможность свернуть блоки кода
+   "editor.minimap.enabled": false,             // миникарта кода
+   "editor.scrollbar.horizontal": "hidden",     // скрыть горизонтальный скролл
+   "editor.scrollbar.vertical": "visible",      // показать вертикальный скролл
+   "window.density.editorTabHeight": "compact", // компактные табы сверху
+   "editor.accessibilitySupport": "off",        // спец.возможности редактора(мне не нужны)
+   "symbols.hidesExplorerArrows": false,        // скрытие стрелок у папок в проводнике
+   "workbench.activityBar.location": "top",     // положение инструментов(проводник, расширения, git и т.д.)
+   "workbench.layoutControl.enabled": true,     // иконки сверху для контроля панелей
+   "workbench.editor.editorActionsLocation": "default", // отображение иконок работы с файлом(code runner)
+   
+   // настройки курсора
+   "editor.cursorBlinking": "phase",           // мигание курсора
+   "editor.cursorSmoothCaretAnimation": "on",  // плавное передвижение курсора
+
+   // шрифт редактора
+   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",  // шрифт
+   "editor.fontSize": 18,                   // размер шрифта
+   "editor.fontWeight": "bold",             // толщина шрифта
+   "editor.lineHeight": 25,                 // высота строки
+   "editor.fontLigatures": false,           // убирает лигатуры(соединение символов ==, <= и т.д.)
+   "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font Mono", 
+   "debug.console.fontFamily": "JetBrainsMono Nerd Font Mono",
+
+   // терминал
+   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono", // шрифт терминала
+   "terminal.integrated.fontWeight": "bold",                         // толщина шрифта терминала
+   "terminal.integrated.fontSize": 16,                               // размер шрифта
+   "terminal.integrated.cursorStyle": "line", // убирает подтверждение удаления файлов
+   "explorer.compactFolders": false,      // убирает компактные папки
+   "explorer.confirmDragAndDrop": false,  // убирает подтверждение перемещения файлов
+   
+   // breadcrumbs
+   "breadcrumbs.icons": false,
+   "breadcrumbs.showKeys": false,
+   "breadcrumbs.showFiles": false,
+   "breadcrumbs.symbolPath": "off",
+   "breadcrumbs.showArrays": false,
+   "breadcrumbs.showEvents": false,
+   "breadcrumbs.showFields": false,
+   "breadcrumbs.showClasses": false,
+   "breadcrumbs.showMethods": false,
+   "breadcrumbs.showBooleans": false,
+   "breadcrumbs.showFunctions": false,
+   "breadcrumbs.showConstants": false,
+   "breadcrumbs.showEnumMembers": false,
+   "breadcrumbs.showConstructors": false,
+
+   // прочее
+   "editor.gotoLocation.multipleDefinitions": "goto", // переход к определению через ctrl
+   "editor.stickyScroll.scrollWithEditor": false,     // убирает прилипание классов и определений сверху
+
+   // настройка переноса слов
+   "editor.wordWrap": "on",            // перенос слов по ширине окна
+   "editor.wrappingIndent": "indent",  // дополнительный отступ при переносе
+
+   "vscode-pets.theme": "forest",
+   "vscode-pets.petSize": "small",
+   "vscode-pets.throwBallWithMouse": true,
+   
+   "[cpp]": {
+      "editor.wordBasedSuggestions": "off",
+      "editor.semanticHighlighting.enabled": true,
+      "editor.stickyScroll.defaultModel": "foldingProviderModel",
+      "editor.suggest.insertMode": "replace"
+   },
+   "workbench.editor.empty.hint": "hidden",
+   "code-runner.executorMap": {
+      "javascript": "node",
+      "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+      "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "zig": "zig run",
+      "cpp": "cd $dir && g++ -g -std=c++20 $fileName -o $fileNameWithoutExt && rm -f tempCodeRunnerFile tempCodeRunnerFile.cpp && $dir$fileNameWithoutExt",
+      "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "php": "php",
+      "python": "python -u",
+      "perl": "perl",
+      "perl6": "perl6",
+      "ruby": "ruby",
+      "go": "go run",
+      "lua": "lua",
+      "groovy": "groovy",
+      "powershell": "powershell -ExecutionPolicy ByPass -File",
+      "bat": "cmd /c",
+      "shellscript": "bash",
+      "fsharp": "fsi",
+      "csharp": "scriptcs",
+      "vbscript": "cscript //Nologo",
+      "typescript": "ts-node",
+      "coffeescript": "coffee",
+      "scala": "scala",
+      "swift": "swift",
+      "julia": "julia",
+      "crystal": "crystal",
+      "ocaml": "ocaml",
+      "r": "Rscript",
+      "applescript": "osascript",
+      "clojure": "lein exec",
+      "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+      "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+      "racket": "racket",
+      "scheme": "csi -script",
+      "ahk": "autohotkey",
+      "autoit": "autoit3",
+      "dart": "dart",
+      "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+      "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+      "haskell": "runghc",
+      "nim": "nim compile --verbosity:0 --hints:off --run",
+      "lisp": "sbcl --script",
+      "kit": "kitc --run",
+      "v": "v run",
+      "sass": "sass --style expanded",
+      "scss": "scss --style expanded",
+      "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+      "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "sml": "cd $dir && sml $fileName",
+      "mojo": "mojo run",
+      "erlang": "escript",
+      "spwn": "spwn build",
+      "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+      "gleam": "gleam run -m $fileNameWithoutExt"
+   },
+   "code-runner.runInTerminal": true,
+   "git.confirmSync": false,
+   "git.autofetch": true,
+   "explorer.confirmDelete": false
+}
