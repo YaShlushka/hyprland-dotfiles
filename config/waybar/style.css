@@ -13,21 +13,9 @@ window#waybar {
   transition-duration: .5s;
 }
 
-#tray {
-	background-color: @main-bg;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 15px 15px 15px 15px;
-}
-
-/* #tray > .active { */
-/* 	background-color: @main-bg; */
-/* 	padding-left: 10px; */
-/* 	padding-right: 10px; */
-/* 	border-radius: 15px 15px 15px 15px; */
-/* } */
-
-#workspaces {
+#left,
+#center,
+#right {
 	background-color: @main-bg;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -68,10 +56,6 @@ window#waybar {
 }
 
 #taskbar {
-	background-color: @main-bg;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 15px 15px 15px 15px;
 	color: @main-fg;
 }
 
@@ -116,80 +100,23 @@ window#waybar {
 	background: transparent;
 }
 
-#cava {
-   background-color: @main-bg;
-	color: @main-fg;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 10px 10px 10px 10px;
-}
-
-#custom-cava {
-   background-color: @main-bg;
-	color: @main-fg;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 10px 10px 10px 10px;
-}
-
-#clock {
-	background-color: @main-bg;
-	color: @main-fg;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 15px 15px 15px 15px;
-}
-
-#system_info {
-	background-color: @main-bg;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 15px 15px 15px 15px;
+#clock,
+#system_info,
+#language,
+#power_menu,
+#custom-notifications {
 	color: @main-fg;
 }
 
-#language {
-	background-color: @main-bg;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 15px 15px 15px 15px;
+#custom-separator {
 	color: @main-fg;
-}
-
-#power_menu {
-	background-color: @main-bg;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 15px 15px 15px 15px;
-	color: @main-fg;
+	opacity: 0.1;
 }
 
 #custom-off_button {
-	background-color: transparent;
 	color: @red;
 }
 
-#custom-notifications {
-	background-color: transparent;
-	color: @green;
-}
-
 #network {
-	background-color: transparent;
 	color: @blue;
 }
-
-/* #pulseaudio { */
-/* 	background-color: transparent; */
-/* 	color: @blue; */
-/* } */
-
-/* #cpu { */
-/* 	background-color: transparent; */
-/* 	color: @purple; */
-/* } */
-
-/* #memory { */
-/* 	background-color: transparent; */
-/* 	color: @cyan; */
-/* } */

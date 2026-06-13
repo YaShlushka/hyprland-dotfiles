@@ -1,0 +1,14 @@
+appimagelauncher
+eww
+minecraft-launcher
+nmgui-bin
+peaclock
+pipes.sh
+python-pywal16
+sherlock
+snapd
+swaync-widgets-git
+ttf-ms-fonts
+v2raya
+xray
+

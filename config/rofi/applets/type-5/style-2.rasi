@@ -27,6 +27,7 @@ configuration {
 USE_ICON=NO
 */
 
+@import "~/.config/rofi/colors.rasi"
 /*****----- Main Window -----*****/
 window {
     transparency:                "real";
@@ -40,9 +41,9 @@ window {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               20px;
-    border-color:                @selected;
+    border-color:                @border-color;
     cursor:                      "default";
-    background-color:            @background;
+    background-color:            @main-bg;
 }
 
 /*****----- Main Box -----*****/
@@ -60,7 +61,7 @@ mainbox {
 imagebox {
     border-radius:               20px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/j.jpg", height);
+    background-image:            url("/home/paderinee/Pictures/wallpapers/w43.jpg", height);
     children:                    [ "dummy", "inputbar", "dummy" ];
 }
 
@@ -69,7 +70,7 @@ inputbar {
     enabled:                     true;
     spacing:                     15px;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @main-fg;
     children:                    [ "dummy", "textbox-prompt-colon", "prompt", "dummy"];
 }
 
@@ -82,15 +83,15 @@ textbox-prompt-colon {
     str:                         "";
     padding:                     10px 13px;
     border-radius:               15px;
-    background-color:            @urgent;
-    text-color:                  @foreground;
+    background-color:            @select-bg;
+    text-color:                  @select-fg;
 }
 prompt {
     enabled:                     true;
     padding:                     10px;
     border-radius:               15px;
-    background-color:            @active;
-    text-color:                  @background;
+    background-color:            @select-urgent-bg;
+    text-color:                  @select-fg;
 }
 
 /*****----- Message -----*****/
@@ -100,13 +101,13 @@ message {
     padding:                     10px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
-    background-color:            @background-alt;
-    text-color:                  @foreground;
+    border-color:                @border-color;
+    background-color:            @search-field;
+    text-color:                  @main-fg;
 }
 textbox {
-    background-color:            inherit;
-    text-color:                  inherit;
+    background-color:            transparent;
+    text-color:                  @main-fg;
     vertical-align:              0.5;
     horizontal-align:            0.0;
 }
@@ -131,14 +132,14 @@ element {
     padding:                     10px;
     border:                      0px solid;
     border-radius:               15px;
-    border-color:                @selected;
+    border-color:                @border-color;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @main-fg;
     cursor:                      pointer;
 }
 element-text {
     background-color:            transparent;
-    text-color:                  inherit;
+    text-color:                  @main-fg;
     cursor:                      inherit;
     vertical-align:              0.5;
     horizontal-align:            0.0;
@@ -146,22 +147,22 @@ element-text {
 
 element normal.normal,
 element alternate.normal {
-    background-color:            var(background);
-    text-color:                  var(foreground);
+    background-color:            var(search-field);
+    text-color:                  var(main-fg);
 }
 element normal.urgent,
 element alternate.urgent,
 element selected.active {
-    background-color:            var(urgent);
-    text-color:                  var(background);
+    background-color:            var(select-bg);
+    text-color:                  var(select-fg);
 }
 element normal.active,
 element alternate.active,
 element selected.urgent {
-    background-color:            var(active);
-    text-color:                  var(background);
+    background-color:            var(select-bg);
+    text-color:                  var(select-fg);
 }
 element selected.normal {
-    background-color:            var(selected);
-    text-color:                  var(background);
+    background-color:            var(select-bg);
+    text-color:                  var(select-fg);
 }

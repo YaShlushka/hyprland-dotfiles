@@ -1,0 +1,18 @@
+@import "../../.config/waybar/color_scheme.css";
+
+* {
+	color: @main-fg;
+	all: unset;
+	font-size: 16px;
+	font-family: "JetBrains Mono Nerd Font";
+	transition: 200ms;
+}
+
+.blank-window {  
+  background: transparent;  
+}
+
+.control-center {
+  background: @main-bg;
+  border-radius: 24px;
+}

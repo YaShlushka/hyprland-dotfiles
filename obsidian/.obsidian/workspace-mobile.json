@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "042a63048150f74e",
+    "type": "split",
+    "children": [
+      {
+        "id": "da34aae9b4ca584f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24e506a6f990d470",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Покупки.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Покупки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "51f49f9648543126",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "a587733bdc5f69b1",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Файловый менеджер"
+        }
+      },
+      {
+        "id": "2792eac8e92b9667",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "bf4744a6ac7e00f8",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "2b44eb9654882017",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
+        }
+      },
+      {
+        "id": "43e9c19e25eb62f7",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "863129a2dd0c9c94",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "9866893b92185322",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Покупки.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Обратные ссылки"
+        }
+      },
+      {
+        "id": "47623b3626988560",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "5dde5dd770d5b059",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
+    }
+  },
+  "active": "24e506a6f990d470",
+  "lastOpenFiles": [
+    "Кибербезопасность/OSINT.md",
+    "Кибербезопасность/Google dorking.md",
+    "Кибербезопасность/Утилиты/dirb.md",
+    "[[.md",
+    "Японский/Канджи/事.md",
+    "Японский/Канджи/業.md",
+    "Японский/Канго/授業.md",
+    "Японский/Канджи/授.md",
+    "Японский/Канджи/段.md",
+    "Японский/Канджи/法.md",
+    "Японский/Канджи/答.md",
+    "Японский/Канджи/支.md",
+    "Японский/Хирагана/ながい.md",
+    "Японский/Канджи/宅.md",
+    "Японский/Канджи/台.md",
+    "Японский/Хирагана/できる.md",
+    "Японский/Хирагана/のまま.md",
+    "Японский/Хирагана/みじかい.md",
+    "Японский/Ономатопеи/いろいろ.md",
+    "Японский/Канджи/晩.md",
+    "Японский/Ономатопеи",
+    "Японский/Канджи/所.md",
+    "Японский/Канджи/側.md",
+    "Японский/Канджи/中.md",
+    "Японский/Канго/食堂.md",
+    "Японский/Канджи/起.md",
+    "Японский/Канджи/始.md",
+    "Изображения/星の王子さま/1.png",
+    "Изображения/星の王子さま/45.png",
+    "Изображения/星の王子さま/44.png",
+    "Изображения/星の王子さま/46.png",
+    "Изображения/星の王子さま/43.png",
+    "Изображения/星の王子さま/42.png",
+    "Изображения/星の王子さま/41.png",
+    "Изображения/星の王子さま/40.png",
+    "Изображения/星の王子さま/39.png",
+    "Изображения/星の王子さま/36.png",
+    "Переводы/Изображения",
+    "Изображения/星の王子さま/Изображения",
+    "Изображения/星の王子さま",
+    "Изображения",
+    "Untitled.canvas",
+    "Переводы",
+    "Японский/Грамматика/Частицы",
+    "Японский/Грамматика",
+    "Японский",
+    "Japanese/Без названия"
+  ]
+}

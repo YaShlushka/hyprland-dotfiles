@@ -31,18 +31,18 @@ fi
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
 	option_1=" ChatGpt"
-	option_2=" Yandex"
-	option_3=" Youtube"
+	option_2=" Youtube"
+	option_3=" Github"
 	option_4=" Reddit"
-	option_5=" Github"
+	option_5=" LeetCode"
 	option_6=" Gmail"
 else
-	option_1=""
-	option_2=""
-	option_3=""
-	option_4=""
-	option_5=""
-	option_6=""
+	option_1=" "
+	option_2=" "
+	option_3=" "
+	option_4=" "
+	option_5=" "
+	option_6=" "
 fi
 
 # Rofi CMD
@@ -67,13 +67,13 @@ run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
 		xdg-open 'https://chatgpt.com/'
 	elif [[ "$1" == '--opt2' ]]; then
-		xdg-open 'https://practicum.yandex.ru/'
-	elif [[ "$1" == '--opt3' ]]; then
 		xdg-open 'https://www.youtube.com/'
+	elif [[ "$1" == '--opt3' ]]; then
+		xdg-open 'https://www.github.com/'
 	elif [[ "$1" == '--opt4' ]]; then
 		xdg-open 'https://www.reddit.com/'
 	elif [[ "$1" == '--opt5' ]]; then
-		xdg-open 'https://www.github.com/'
+		xdg-open 'https://leetcode.com/'
 	elif [[ "$1" == '--opt6' ]]; then
 		xdg-open 'https://mail.google.com/'
 	fi

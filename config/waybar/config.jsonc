@@ -5,37 +5,57 @@
    "margin-left": 10,
    "margin-right": 10,
 	"height" : 30,
-	"spacing": 10,
+	// "spacing": 10,
 
 	"modules-left": [
-		"tray",
-	   // "custom/separator",	
-		"hyprland/workspaces",
-		// "custom/separator",
-		"wlr/taskbar",
-		// "custom/separator",
-		"custom/cava"
+		"group/left"
 	],
 
    "modules-center": [
-      "clock"
+		"group/center"
    ],
 
    "modules-right": [
-		"group/system_info",
-		// "custom/separator",
-		"hyprland/language",
-		// "custom/separator",
-    	"group/power_menu"
+		"group/right"
 	],
+
+	"group/left": {
+		"orientation": "horizontal",
+		"modules": [
+			"tray",
+			"custom/separator",
+			"wlr/taskbar",
+			"custom/separator",
+			"clock"
+		]
+	},
+
+	"group/center": {
+		"orientation": "horizontal",
+		"modules": [
+			"hyprland/language",
+			"custom/separator",
+			"hyprland/workspaces",
+			"custom/separator",
+			"custom/notifications"
+		]
+	},
+
+	"group/right": {
+		"orientation": "horizontal",
+		"modules": [
+			"group/system_info",
+			"custom/separator",
+	    	"group/power_menu"
+		]
+	},
+
 
 	"group/system_info": {
 		"orientation": "horizontal",
 		"modules": [
 			"memory",
-			"cpu",
-			//"battery",
-			"pulseaudio"
+			"cpu"
 		]
 	},
 
@@ -43,26 +63,38 @@
 		"orientation": "horizontal",
 		"modules": [
 			"network",
-			"custom/notifications",
 			"custom/off_button"
 		]
 	},
 
 	"tray": {
-   	"icon-size": 18,
-      "rotate": 0,
-      "spacing": 5
+		"icon-size": 18,
+		"rotate": 0,
+		"spacing": 5
 	},
 
 	"hyprland/workspaces": {
-        "rotate": 0,
-        "all-outputs": true,
-        "active-only": false,
-        "on-click": "activate",
-        "disable-scroll": false,
-        "on-scroll-up": "hyprctl dispatch workspace -1",
-        "on-scroll-down": "hyprctl dispatch workspace +1",
-        "persistent-workspaces": {}
+		"rotate": 0,
+		"all-outputs": true,
+		"active-only": false,
+		"format": "{icon}",
+		"on-click": "activate",
+		"disable-scroll": false,
+		"on-scroll-up": "hyprctl dispatch workspace +1",
+		"on-scroll-down": "hyprctl dispatch workspace -1",
+		"persistent-workspaces": {},
+		"format-icons": {
+			"1": "一",
+			"2": "二",
+			"3": "三",
+			"4": "四",
+			"5": "五",
+			"6": "六",
+			"7": "七",
+			"8": "八",
+			"9": "九",
+			"10": "十"
+		}
     },
 
 	 "wlr/taskbar": {
@@ -78,44 +110,31 @@
 			"firefoxdeveloperedition": "firefox-developer-edition"
 		}
 	},
-
-	"cava": {
-		"cava_config": "/home/paderinee/.config/cava/config",
-		"framerate": 120,
-    	"autosens": 1,
-   	"bars": 12,
-   	"method": "pipewire",
-   	"source": "auto",
-   	"bar_delimiter": 0,
-   	"input_delay": 0,
-   	"sleep_timer": 1,
-   	"hide_on_silence": true,
-   	"format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
-	},
 	
    "clock": {
-      "format": "  {:%H:%M %p}",
-        "rotate": 0,
-        "format-alt": "{:%R | 󰃭 %d·%m·%y}",
-        "tooltip-format": "<tt>{calendar}</tt>",
-        "calendar": {
-            "mode": "month",
-            "mode-mon-col": 3,
-            "on-scroll": 1,
-            "on-click-right": "mode",
-            "format": {
-                "months": "<span color='#ffead3'><b>{}</b></span>",
-                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-                "today": "<span color='#ff6699'><b>{}</b></span>"
-            }
-        },
-        "actions": {
-            "on-click-right": "mode",
-            "on-click-forward": "tz_up",
-            "on-click-backward": "tz_down",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
+      // "format": "  {:%H:%M %p}",
+		"format": " {:%H:%M}",
+		"rotate": 0,
+		"format-alt": "{:%R | 󰃭 %d·%m·%y}",
+		"tooltip-format": "<tt>{calendar}</tt>",
+		"calendar": {
+			"mode": "month",
+			"mode-mon-col": 3,
+			"on-scroll": 1,
+			"on-click-right": "mode",
+			"format": {
+				"months": "<span color='#ffead3'><b>{}</b></span>",
+				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+				"today": "<span color='#ff6699'><b>{}</b></span>"
+			}
+		},
+		"actions": {
+			"on-click-right": "mode",
+			"on-click-forward": "tz_up",
+			"on-click-backward": "tz_down",
+			"on-scroll-up": "shift_up",
+			"on-scroll-down": "shift_down"
+		}
 	},
 
 	"memory": {
@@ -125,7 +144,7 @@
    },
 
    "cpu": {
-		"format": " {usage}% ",
+		"format": " {usage}%",
       "tooltip": false
    },
 
@@ -146,37 +165,32 @@
       "on-click": "pavucontrol"
    },
 
-	"custom/language": {
-		"format": "{}",
-		"exec": "~/.config/hypr/scripts/get_lang.sh",
-		"interval": 1,
-		"tooltip": false
-	},
-
 	"hyprland/language": {
-		"format": "{short} {variant}",
+		"format": "{}",
+		"format-en": "英語",
+		"format-ru": "ロシア語",
 		"rotate": 0,
 		"min-length": 2,
 		"tooltip": false
 	},
 
    "network": {
-      "format-wifi": "  {signalStrength}% ",
-      "format-ethernet": "{cidr} ",
-      "tooltip-format": "{ifname} via {gwaddr} ",
-      "format-linked": "{ifname} (No IP) ",
-      "format-disconnected": " ⚠ "
+      "format-wifi": "  ",
+      "format-ethernet": "{cidr}  ",
+      "tooltip-format": "{ifname} via {gwaddr}  ",
+      "format-linked": "{ifname} (No IP)  ",
+      "format-disconnected": "⚠ "
    },
 
 	"custom/off_button": {
 		"format": "⏻ ",
 		"interval": "once",
 		"tooltip": false,
-		"on-click": "~/.config/rofi/powermenu/type-5/powermenu.sh"
+		"on-click": "~/.config/rofi/applets/bin/powermenu.sh"
 	},
 
 	"custom/separator": {
-		"format": " ",
+		"format": "|",
   	   "interval": "once",
       "tooltip": false
 	},
@@ -186,11 +200,7 @@
 		"interval": 1,
 		"on-click": "swaync-client -t",
 		"on-click-right": "swaync-client -d -sw",
-		"format": "{}  ",
+		"format": "{} ",
 		"tooltip": false
-	},
-	"custom/cava": {
-		"exec": "$HOME/.config/hypr/scripts/cava.sh",
-		"format": "{}"
 	}
 }

@@ -5,3 +5,11 @@ vim.opt.tabstop = 3
 vim.opt.clipboard = "unnamedplus" -- system buffer
 vim.cmd("syntax on")
 vim.opt.termguicolors = true
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "python",
+	callback = function()
+		vim.opt_local.tabstop = 3
+		vim.opt_local.shiftwidth = 3
+		vim.opt_local.softtabstop = 3
+	end,
+})

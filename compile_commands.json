@@ -1,0 +1,7 @@
+[
+{
+	"directory": "/home/paderinee/code/",
+	"command": "g++ -std=c++20 main.cpp -o main",
+	"file": "/home/paderinee/code/main.cpp"
+}
+]

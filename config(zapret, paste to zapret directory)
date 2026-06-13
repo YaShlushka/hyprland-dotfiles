@@ -1,3 +1,0 @@
-NFQWS_PORTS_TCP=80,443
-NFQWS_PORTS_UDP=443,50000-50099
-NFQWS_OPT="--filter-udp=50000-50099 --filter-l7=discord,stun --dpi-desync=fake --new --filter-tcp=80 --dpi-desync=fake --dpi-desync-repeats=5 <HOSTLIST> --new --filter-tcp=443 --dpi-desync=multidisorder --dpi-desync-split-pos=1,sniext+1,host+1,midsld-2,midsld,midsld+2,endhost-1 <HOSTLIST> --new --filter-udp=443 --dpi-desync=fake --dpi-desync-repeats=6 <HOSTLIST_NOAUTO>"

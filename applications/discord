@@ -1,2 +1,3 @@
 #!/bin/bash
-~/Discord/Discord --enable-features=UseOzonePlatform --ozone-platform=wayland
+~/Discord/discord
+

@@ -1,9 +1,12 @@
+#переименовать в .clang-format
 BasedOnStyle: LLVM
 IndentWidth: 3            # Ширина отступа в пробелах
 TabWidth: 3
 UseTab: Always
 ColumnLimit: 100 # ограничение кол-ва символов в строке
+BreakTemplateDeclarations: Yes # переносить строку после шаблона
 BreakBeforeBraces: Attach # расположение {, всегда прикреплено
 AllowShortIfStatementsOnASingleLine: false  # Запретить однострочные if
 DerivePointerAlignment: false
 PointerAlignment: Left    # Выравнивание указателей
+
